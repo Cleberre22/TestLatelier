@@ -1,0 +1,12 @@
+[31-Jan-2023 21:00:27 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [// Mettre les clés (Env Format)]. in C:\Users\User\Sites\Bedrock\app\bedrock\vendor\vlucas\phpdotenv\src\Parser\Parser.php:30
+Stack trace:
+#0 C:\Users\User\Sites\Bedrock\app\bedrock\vendor\graham-campbell\result-type\src\Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}('Encountered an ...')
+#1 C:\Users\User\Sites\Bedrock\app\bedrock\vendor\vlucas\phpdotenv\src\Parser\Parser.php(31): GrahamCampbell\ResultType\Error->mapError(Object(Closure))
+#2 C:\Users\User\Sites\Bedrock\app\bedrock\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Parser\Parser->parse('DB_NAME=local\nD...')
+#3 C:\Users\User\Sites\Bedrock\app\bedrock\config\application.php(38): Dotenv\Dotenv->load()
+#4 C:\Users\User\Sites\Bedrock\app\bedrock\web\wp-config.php(8): require_once('C:\\Users\\User\\S...')
+#5 C:\Users\User\Sites\Bedrock\app\bedrock\web\wp\wp-load.php(55): require_once('C:\\Users\\User\\S...')
+#6 C:\Users\User\Sites\Bedrock\app\bedrock\web\wp\wp-blog-header.php(13): require_once('C:\\Users\\User\\S...')
+#7 C:\Users\User\Sites\Bedrock\app\bedrock\web\index.php(6): require('C:\\Users\\User\\S...')
+#8 {main}
+  thrown in C:\Users\User\Sites\Bedrock\app\bedrock\vendor\vlucas\phpdotenv\src\Parser\Parser.php on line 30
